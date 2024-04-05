@@ -12,6 +12,8 @@ $('.slider').slick({
     prevArrow: ".prev",
     nextArrow: ".next",
     speed: 300,
+    autoplay: true,
+    autoplaySpeed: 2000,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -30,4 +32,16 @@ $('.slider').slick({
             }
         }
     ]
+});
+
+const btnsub = document.querySelector(".btn-sub");
+const btnadd = document.querySelector(".btn-add");
+const number = document.querySelector(".number");
+
+btnsub.addEventListener("click", function () {
+    number.innerHTML = +number.innerHTML - 1;
+});
+
+btnadd.addEventListener("click", function () {
+    number.innerHTML = +number.innerHTML + 1;
 });
