@@ -9,6 +9,8 @@ menuicon.addEventListener("click", function () {
 $('.slider').slick({
     dots: false,
     infinite: true,
+    prevArrow: ".prev",
+    nextArrow: ".next",
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
