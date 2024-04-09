@@ -75,5 +75,5 @@ accordaon.forEach(acc => {
         const accacitve = document.querySelector(".accordion.acc-active");
         acc.parentElement.classList.toggle("acc-active");
         accacitve && accacitve.classList.remove("acc-active");
-    })
+    });
 });
