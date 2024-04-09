@@ -44,7 +44,8 @@
     color: #FFD600;
 }
 
-section {
+section,
+footer {
     background-image: url(../image/section-background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -201,8 +202,8 @@ section {
 :root {
     /* font-size */
     --fs-sm: 18px;
-    --fs-md: 24px;
-    --fs-lg: 36px;
+    --fs-md: 20px;
+    --fs-lg: 24px;
     --fs-xl: 32px;
     --fs-2xl: 57px;
 }
@@ -373,6 +374,87 @@ section {
     z-index: 1;
 }
 
+.slider-box1 {
+    background-image: url(../image/Frame60.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading-slider {
+    font-family: "Noto Serif", serif;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 49.03px;
+    color: #a59a90e6;
+    background-color: transparent;
+    text-shadow: 1px 1px 1px white;
+}
+
+.img-1 {
+    box-shadow: -2px -2px 2px 0px #0000004D inset;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px 0px #FFFFFF inset;
+}
+
+.accordion-heading {
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.accordion {
+    position: relative;
+    overflow: hidden;
+    border-top: 2px solid #000000;
+}
+
+.text-p {
+    position: absolute;
+    top: -200%;
+    left: 0%;
+    transition: all 0.3s ease-in-out;
+}
+
+.acc-icon {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.line1 {
+    width: 11px;
+    height: 3px;
+    background-color: #000000;
+    display: flex;
+}
+
+.line2 {
+    position: absolute;
+    width: 3px;
+    height: 11px;
+    background-color: #000000;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.acc-active {
+    .text-p {
+        position: unset;
+    }
+    .line2 {
+        display: none;
+    }
+}
 
 
 

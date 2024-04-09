@@ -282,7 +282,7 @@
                             </div>
                             <button class="text-e font-s-14 btn-mint mt-3">Mint NOW</button>
                             <h5 class="text-e font-s-18 color-green mb-0 mt-4">Time Left</h5>
-                            <p class="text-e color-red">40:15:12:10</p>
+                            <p class="text-e color-red" id="time-1">40:15:12:10</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-12 p-0 outline-black">
@@ -462,85 +462,45 @@
             <section class="outline-black">
                 <div class="container">
                     <div class="slider1 outline-black">
-                        <div class="slider-box px-4 py-5 outline-black">
-                            <p class="text-e">Etiam eget</p>
-                            <div class="d-flex gap-3">
-                                <a href="">
-                                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M22 2.1308C21.1762 2.49822 20.3024 2.7394 19.4076 2.84631C20.3396 2.28394 21.0552 1.39339 21.3922 0.332321C20.5062 0.861633 19.5369 1.23457 18.5261 1.43501C17.7027 0.551907 16.5297 0 15.2315 0C12.7388 0 10.7178 2.03459 10.7178 4.544C10.7178 4.9002 10.7577 5.24696 10.8347 5.57963C7.08348 5.39007 3.7577 3.58104 1.53149 0.831797C1.14305 1.50293 0.920477 2.28359 0.920477 3.11625C0.920477 4.69281 1.71738 6.08361 2.92841 6.89853C2.21164 6.87593 1.51065 6.68103 0.883953 6.3301C0.883695 6.34913 0.883695 6.36817 0.883695 6.38729C0.883695 8.58895 2.43951 10.4256 4.50424 10.843C3.83959 11.025 3.14242 11.0517 2.46598 10.9209C3.0403 12.7262 4.70723 14.0399 6.68224 14.0767C5.13752 15.2954 3.19129 16.0219 1.07671 16.0219C0.712336 16.0219 0.353117 16.0004 0 15.9584C1.99745 17.2477 4.36992 18 6.91883 18C15.221 18 19.7608 11.0758 19.7608 5.07098C19.7608 4.87389 19.7565 4.67793 19.7478 4.48309C20.6314 3.83997 21.3941 3.04342 22 2.1308Z"
-                                            fill="#55ACEE" />
-                                    </svg>
-                                </a>
-                                <p class="text-1 font-s-14">23/02/2022</p>
+                        <div class="slider-box1 px-4 py-5 outline-black d-flex flex-column align-items-center">
+                            <div class="d-flex">
+                                <img src="./assets/svg/Ellipse1.svg" alt="img" class="img-1">
                             </div>
-                            <p class="text-1 font-s-16">
-                                Diam tellus arcu, amet ornare nulla ut scelerisque et. Cum porta ultrices quam in.
+                            <h2 class="text-center heading-slider mt-3 mb-3">Executive Hardo</h2>
+                            <p class="text-center text-1 px-lg-5">
+                                Crypto startup executive, former VC Investor (US$ 1B+ AuM), former MBB Consultant,
                             </p>
-                            <a href="" class="text-1 font-s-14 text-decoration-underline">
-                                Read More...
-                            </a>
                         </div>
-                        <div class="slider-box px-4 py-5">
-                            <p class="text-e">Venenatis.</p>
-                            <div class="d-flex gap-3">
-                                <a href="">
-                                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M22 2.1308C21.1762 2.49822 20.3024 2.7394 19.4076 2.84631C20.3396 2.28394 21.0552 1.39339 21.3922 0.332321C20.5062 0.861633 19.5369 1.23457 18.5261 1.43501C17.7027 0.551907 16.5297 0 15.2315 0C12.7388 0 10.7178 2.03459 10.7178 4.544C10.7178 4.9002 10.7577 5.24696 10.8347 5.57963C7.08348 5.39007 3.7577 3.58104 1.53149 0.831797C1.14305 1.50293 0.920477 2.28359 0.920477 3.11625C0.920477 4.69281 1.71738 6.08361 2.92841 6.89853C2.21164 6.87593 1.51065 6.68103 0.883953 6.3301C0.883695 6.34913 0.883695 6.36817 0.883695 6.38729C0.883695 8.58895 2.43951 10.4256 4.50424 10.843C3.83959 11.025 3.14242 11.0517 2.46598 10.9209C3.0403 12.7262 4.70723 14.0399 6.68224 14.0767C5.13752 15.2954 3.19129 16.0219 1.07671 16.0219C0.712336 16.0219 0.353117 16.0004 0 15.9584C1.99745 17.2477 4.36992 18 6.91883 18C15.221 18 19.7608 11.0758 19.7608 5.07098C19.7608 4.87389 19.7565 4.67793 19.7478 4.48309C20.6314 3.83997 21.3941 3.04342 22 2.1308Z"
-                                            fill="#55ACEE" />
-                                    </svg>
-                                </a>
-                                <p class="text-1 font-s-14">23/02/2022</p>
+                        <div class="slider-box1 px-4 py-5 outline-black d-flex flex-column align-items-center">
+                            <div class="d-flex">
+                                <img src="./assets/svg/Ellipse1.svg" alt="img" class="img-1">
                             </div>
-                            <p class="text-1 font-s-16">
-                                Tortor dolor ultrices mauris aliquam feugiat amet ultrices facilisi. Venenatis.
+                            <h2 class="text-center heading-slider mt-3 mb-3">Johnny Banjo</h2>
+                            <p class="text-center text-1 px-lg-5">
+                                The Hustlin’ Hardos have arrived to the metaverse! 9,999 Hardos have taken over. Lorem
+                                Ipsum is simply dummy text of the
+                                printing industry.
                             </p>
-                            <a href="" class="text-1 font-s-14 text-decoration-underline">
-                                Read More...
-                            </a>
                         </div>
-                        <div class="slider-box px-4 py-5 outline-black">
-                            <p class="text-e">Quis vulputate.</p>
-                            <div class="d-flex gap-3">
-                                <a href="">
-                                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M22 2.1308C21.1762 2.49822 20.3024 2.7394 19.4076 2.84631C20.3396 2.28394 21.0552 1.39339 21.3922 0.332321C20.5062 0.861633 19.5369 1.23457 18.5261 1.43501C17.7027 0.551907 16.5297 0 15.2315 0C12.7388 0 10.7178 2.03459 10.7178 4.544C10.7178 4.9002 10.7577 5.24696 10.8347 5.57963C7.08348 5.39007 3.7577 3.58104 1.53149 0.831797C1.14305 1.50293 0.920477 2.28359 0.920477 3.11625C0.920477 4.69281 1.71738 6.08361 2.92841 6.89853C2.21164 6.87593 1.51065 6.68103 0.883953 6.3301C0.883695 6.34913 0.883695 6.36817 0.883695 6.38729C0.883695 8.58895 2.43951 10.4256 4.50424 10.843C3.83959 11.025 3.14242 11.0517 2.46598 10.9209C3.0403 12.7262 4.70723 14.0399 6.68224 14.0767C5.13752 15.2954 3.19129 16.0219 1.07671 16.0219C0.712336 16.0219 0.353117 16.0004 0 15.9584C1.99745 17.2477 4.36992 18 6.91883 18C15.221 18 19.7608 11.0758 19.7608 5.07098C19.7608 4.87389 19.7565 4.67793 19.7478 4.48309C20.6314 3.83997 21.3941 3.04342 22 2.1308Z"
-                                            fill="#55ACEE" />
-                                    </svg>
-                                </a>
-                                <p class="text-1 font-s-14">23/02/2022</p>
+                        <div class="slider-box1 px-4 py-5 outline-black d-flex flex-column align-items-center">
+                            <div class="d-flex">
+                                <img src="./assets/svg/Ellipse1.svg" alt="img" class="img-1">
                             </div>
-                            <p class="text-1 font-s-16">
-                                Vestibulum at gravida amet ullamcorper a ipsum laoreet tortor. Et tortor vel arcu ac.
+                            <h2 class="text-center heading-slider mt-3 mb-3">Executive Hardo</h2>
+                            <p class="text-center text-1 px-lg-5">
+                                Crypto startup executive, former VC Investor (US$ 1B+ AuM), former MBB Consultant,
                             </p>
-                            <a href="" class="text-1 font-s-14 text-decoration-underline">
-                                Read More...
-                            </a>
                         </div>
-                        <div class="slider-box px-4 py-5">
-                            <p class="text-e">Etiam eget</p>
-                            <div class="d-flex gap-3">
-                                <a href="">
-                                    <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M22 2.1308C21.1762 2.49822 20.3024 2.7394 19.4076 2.84631C20.3396 2.28394 21.0552 1.39339 21.3922 0.332321C20.5062 0.861633 19.5369 1.23457 18.5261 1.43501C17.7027 0.551907 16.5297 0 15.2315 0C12.7388 0 10.7178 2.03459 10.7178 4.544C10.7178 4.9002 10.7577 5.24696 10.8347 5.57963C7.08348 5.39007 3.7577 3.58104 1.53149 0.831797C1.14305 1.50293 0.920477 2.28359 0.920477 3.11625C0.920477 4.69281 1.71738 6.08361 2.92841 6.89853C2.21164 6.87593 1.51065 6.68103 0.883953 6.3301C0.883695 6.34913 0.883695 6.36817 0.883695 6.38729C0.883695 8.58895 2.43951 10.4256 4.50424 10.843C3.83959 11.025 3.14242 11.0517 2.46598 10.9209C3.0403 12.7262 4.70723 14.0399 6.68224 14.0767C5.13752 15.2954 3.19129 16.0219 1.07671 16.0219C0.712336 16.0219 0.353117 16.0004 0 15.9584C1.99745 17.2477 4.36992 18 6.91883 18C15.221 18 19.7608 11.0758 19.7608 5.07098C19.7608 4.87389 19.7565 4.67793 19.7478 4.48309C20.6314 3.83997 21.3941 3.04342 22 2.1308Z"
-                                            fill="#55ACEE" />
-                                    </svg>
-                                </a>
-                                <p class="text-1 font-s-14">23/02/2022</p>
+                        <div class="slider-box1 px-4 py-5 outline-black d-flex flex-column align-items-center">
+                            <div class="d-flex">
+                                <img src="./assets/svg/Ellipse1.svg" alt="img" class="img-1">
                             </div>
-                            <p class="text-1 font-s-16">
-                                Diam tellus arcu, amet ornare nulla ut scelerisque et. Cum porta ultrices quam in.
+                            <h2 class="text-center heading-slider mt-3 mb-3">Johnny Banjo</h2>
+                            <p class="text-center text-1 px-lg-5">
+                                The Hustlin’ Hardos have arrived to the metaverse! 9,999 Hardos have taken over. Lorem
+                                Ipsum is simply dummy text of the
+                                printing industry.
                             </p>
-                            <a href="" class="text-1 font-s-14 text-decoration-underline">
-                                Read More...
-                            </a>
                         </div>
                     </div>
             </section>
@@ -550,6 +510,176 @@
             </div>
         </section>
     </main>
+    <footer>
+        <footer class="outline-black">
+            <div class="container border-right border-left p-0">
+                <div class="accordion border-0 acc-active">
+                    <div class="accordion-heading d-flex justify-content-between align-items-center">
+                        <h2 class="text-e fs-24 m-0">What is an NFT?</h2>
+                        <div class="acc-icon">
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                        </div>
+                    </div>
+                    <div class="text-p p-20">
+                        <p class="text-1">
+                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
+                            blockchain-managed ownership that
+                            users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But
+                            they
+                            can also offer additional
+                            benefits like exclusive access to websites, event tickets, game items, and ownership records
+                            for
+                            physical objects. Think
+                            of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos
+                            works like this
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-heading d-flex justify-content-between align-items-center">
+                        <h2 class="text-e fs-24 m-0">How do I get an NFT?</h2>
+                        <div class="acc-icon">
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                        </div>
+                    </div>
+                    <div class="text-p p-20">
+                        <p class="text-1">
+                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
+                            blockchain-managed ownership that
+                            users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But
+                            they
+                            can also offer additional
+                            benefits like exclusive access to websites, event tickets, game items, and ownership records
+                            for
+                            physical objects. Think
+                            of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos
+                            works like this
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-heading d-flex justify-content-between align-items-center">
+                        <h2 class="text-e fs-24 m-0">How much is a Hustlin' Hardo NFT?</h2>
+                        <div class="acc-icon">
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                        </div>
+                    </div>
+                    <div class="text-p p-20">
+                        <p class="text-1">
+                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
+                            blockchain-managed ownership that
+                            users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But
+                            they
+                            can also offer additional
+                            benefits like exclusive access to websites, event tickets, game items, and ownership records
+                            for
+                            physical objects. Think
+                            of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos
+                            works like this
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-heading d-flex justify-content-between align-items-center">
+                        <h2 class="text-e fs-24 m-0">Where can I mint a Hustlin' Hardos NFT?</h2>
+                        <div class="acc-icon">
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                        </div>
+                    </div>
+                    <div class="text-p p-20">
+                        <p class="text-1">
+                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
+                            blockchain-managed ownership that
+                            users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But
+                            they
+                            can also offer additional
+                            benefits like exclusive access to websites, event tickets, game items, and ownership records
+                            for
+                            physical objects. Think
+                            of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos
+                            works like this
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-heading d-flex justify-content-between align-items-center">
+                        <h2 class="text-e fs-24 m-0">How do I mint a Hustlin' Hardo NFT?</h2>
+                        <div class="acc-icon">
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                        </div>
+                    </div>
+                    <div class="text-p p-20">
+                        <p class="text-1">
+                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
+                            blockchain-managed ownership that
+                            users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But
+                            they
+                            can also offer additional
+                            benefits like exclusive access to websites, event tickets, game items, and ownership records
+                            for
+                            physical objects. Think
+                            of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos
+                            works like this
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-heading d-flex justify-content-between align-items-center">
+                        <h2 class="text-e fs-24 m-0">How many Hustlin' Hardos NFTs will there be?</h2>
+                        <div class="acc-icon">
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                        </div>
+                    </div>
+                    <div class="text-p p-20">
+                        <p class="text-1">
+                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
+                            blockchain-managed ownership that
+                            users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But
+                            they
+                            can also offer additional
+                            benefits like exclusive access to websites, event tickets, game items, and ownership records
+                            for
+                            physical objects. Think
+                            of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos
+                            works like this
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <div class="accordion-heading d-flex justify-content-between align-items-center">
+                        <h2 class="text-e fs-24 m-0">What is the utility and functionality of a Hustlin' Hardo NFT?</h2>
+                        <div class="acc-icon">
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                        </div>
+                    </div>
+                    <div class="text-p p-20">
+                        <p class="text-1">
+                            NFT stands for “Non-fungible token,” which means that it’s a unique, digital item with
+                            blockchain-managed ownership that
+                            users can buy, own, and trade. Some NFT’s fundamental function is to be digital art. But
+                            they
+                            can also offer additional
+                            benefits like exclusive access to websites, event tickets, game items, and ownership records
+                            for
+                            physical objects. Think
+                            of it as a unique piece of art that can also work as a “members-only” card. Hustlin' Hardos
+                            works like this
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="container pt-3 pb-3">
+            <h2 class="text-center text-1">© Hustlin' Hardos 2022</h2>
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
