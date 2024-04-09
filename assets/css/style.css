@@ -92,6 +92,24 @@ footer {
     color: #000000;
     white-space: nowrap;
     text-transform: uppercase;
+    position: relative;
+}
+
+.list-text::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    right: 0%;
+    background-color: #000000;
+    width: 0%;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.list-text:hover::after {
+    width: 100%;
+    left: 0%;
+    right: auto;
 }
 
 .w-fit {
@@ -148,6 +166,10 @@ footer {
     ul {
         flex-direction: column;
         gap: 40px;
+    }
+
+    .list-text {
+        color: #FFFFFF;
     }
 
 }
@@ -451,6 +473,7 @@ footer {
     .text-p {
         position: unset;
     }
+
     .line2 {
         display: none;
     }
@@ -482,6 +505,10 @@ footer {
         ul {
             flex-direction: row;
             gap: 0px;
+        }
+
+        .list-text {
+            color: #000000;
         }
 
     }
