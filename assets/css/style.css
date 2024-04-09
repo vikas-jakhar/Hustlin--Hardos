@@ -90,6 +90,11 @@ section {
     line-height: 21.79px;
     color: #000000;
     white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.w-fit {
+    width: fit-content;
 }
 
 .p-10 {
@@ -250,6 +255,14 @@ section {
     border-right: 2px solid #000000;
 }
 
+.border-left {
+    border-left: 2px solid #000000;
+}
+
+.border-right {
+    border-right: 2px solid #000000;
+}
+
 .btn-mint {
     width: 111px;
     background: #FFD600;
@@ -266,6 +279,9 @@ section {
     color: #00A106;
 }
 
+.fs-24 {
+    font-size: var(--fs-md);
+}
 
 .font-s-14 {
     font-size: 14px;
@@ -278,6 +294,87 @@ section {
 .font-s-18 {
     font-size: var(--fs-sm);
 }
+
+.heading {
+    font-family: "ModernoFBComp", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    color: #000000;
+}
+
+.prev,
+.next,
+.prev1,
+.next1 {
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.prev:hover,
+.next:hover,
+.prev1:hover,
+.next1:hover {
+    filter: drop-shadow(2px 2px 3px #000000);
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.top-border {
+    border-top: 2px solid #000000;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 28px;
+    width: 2px;
+    height: 100%;
+    background-color: #000000;
+}
+
+.timeline::before {
+    content: url(../svg/down-arrow-svgrepo-com.svg);
+    position: absolute;
+    bottom: 0%;
+    left: 16.5px;
+    width: 2px;
+    height: 16px;
+}
+
+.timeline-box {
+    padding-left: 71px;
+    margin-top: 24px;
+    width: 100%;
+    position: relative;
+}
+
+.py-99 {
+    padding-top: 99px;
+    padding-bottom: 99px;
+}
+
+.timeline-box::after {
+    content: url(../svg/Group45.svg);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+
+.right-dot::after {
+    content: url(../svg/Group45.svg);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+
+
+
 
 @media (min-width:992px) {
     .heading {
@@ -324,8 +421,63 @@ section {
         --fs-2xl: 157px;
     }
 
-    .slick-next,
-    .slick-prev {
-        top: -22%;
+    .timeline::after {
+        left: 50%;
+    }
+
+    .timeline-box {
+        width: 50%;
+        padding-left: 50px;
+    }
+
+    .timeline-box::after {
+        left: -29px;
+    }
+
+    .right-dot::after {
+        right: -31px;
+        left: auto;
+    }
+
+    .left-50 {
+        left: 50%;
+    }
+
+    .pl-16 {
+        padding-left: 16px;
+    }
+
+    .pr-46 {
+        padding-right: 46px;
+    }
+
+    .top-150 {
+        top: -150px;
+    }
+
+    .top-180 {
+        top: -180px;
+    }
+
+    .top-360 {
+        top: -360px;
+    }
+
+    .top-310 {
+        top: -310px;
+    }
+
+    .top-210 {
+        top: -210px;
+    }
+
+    .timeline::before {
+        left: 48.8%;
+    }
+}
+
+@media (min-width:1200px) {
+    .timeline::before {
+        left: 49.1%;
     }
 }
