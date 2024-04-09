@@ -416,7 +416,7 @@ footer {
 
 .text-p {
     position: absolute;
-    top: -200%;
+    top: -600%;
     left: 0%;
     transition: all 0.3s ease-in-out;
 }
