@@ -140,6 +140,35 @@ footer {
     background-clip: text;
 }
 
+.marquee {
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.marquee div {
+    display: inline-block;
+    padding-left: 100%;
+    text-indent: 0;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee div:hover {
+    animation-play-state: paused
+}
+
+/* Make it move */
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
 .news {
     font-family: "Noto Serif", serif;
     font-size: var(--fs-xl);
