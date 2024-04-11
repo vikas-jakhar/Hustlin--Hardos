@@ -12,6 +12,15 @@
     text-decoration: none !important;
 }
 
+:root {
+    /* font-size */
+    --fs-sm: 18px;
+    --fs-md: 20px;
+    --fs-lg: 24px;
+    --fs-xl: 32px;
+    --fs-2xl: 57px;
+}
+
 .header-1 {
     background: #000000;
 }
@@ -136,7 +145,7 @@ footer {
     font-size: var(--fs-xl);
     font-weight: 400;
     line-height: normal;
-    text-shadow: 2px 2px 3px #000000;
+    text-shadow: 1px 1px 2px #000000;
     background-color: #565656;
     color: transparent;
     background-clip: text;
@@ -156,7 +165,7 @@ footer {
     height: 100vh;
     top: 0%;
     right: -100%;
-    background-image: url(../image/logo.png);
+    background-image: linear-gradient(to top, #000000, #0066AD);
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
@@ -220,16 +229,6 @@ footer {
 #hamburger-icon:hover .line-3 {
     width: 20px;
 }
-
-:root {
-    /* font-size */
-    --fs-sm: 18px;
-    --fs-md: 20px;
-    --fs-lg: 24px;
-    --fs-xl: 32px;
-    --fs-2xl: 57px;
-}
-
 
 .text-e {
     font-family: "Noto Serif", serif;
@@ -450,24 +449,16 @@ footer {
 }
 
 .line1 {
-    width: 11px;
-    height: 3px;
-    background-color: #000000;
     display: flex;
 }
 
 .line2 {
-    position: absolute;
-    width: 3px;
-    height: 11px;
-    background-color: #000000;
-    display: flex;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: none;
 }
 
-
+.max-w-438 {
+    max-width: 438px;
+}
 
 .acc-active {
     .text-p {
@@ -475,6 +466,10 @@ footer {
     }
 
     .line2 {
+        display: flex;
+    }
+
+    .line1 {
         display: none;
     }
 }
